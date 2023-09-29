@@ -7,7 +7,6 @@
 // See Lecture 52, part 1
 var helloSpeaker ={}
 
-helloSpeaker.name="Yakov";
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
 var speakWord = "Hello";
 
@@ -18,7 +17,7 @@ var speakWord = "Hello";
 function speak(name) {
   console.log(speakWord + " " + name);
 }
-
+speak(ali).speakWord=helloSpeaker;
 // STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
 // 'helloSpeaker' on the global scope as well.
 // See Lecture 52, part 2
